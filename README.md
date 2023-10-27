@@ -35,4 +35,4 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 ## project requirement Artisan CMD
 1. composer create-project --prefer-dist laravel/laravel ajax-data-table
 2. composer require yajra/laravel-datatables-oracle
-3. <img src="image/config-app.png" alt="License"></a>
+3. <img src="/blob/main/image/config-app.png" alt="License"></a>
