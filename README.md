@@ -36,13 +36,15 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 1. composer create-project --prefer-dist laravel/laravel ajax-data-table
 2. composer require yajra/laravel-datatables-oracle
 3. config/app.php
-           <p> .....
+           <p>
             'providers' => [
-                ....
+              <br>
                 Yajra\DataTables\DataTablesServiceProvider::class,
+                 <br>
             ]
-            'aliases' => [
-                ....
+             <br>
+            'aliases' => [ <br>
+                 <br>
                 'DataTables' => Yajra\DataTables\Facades\DataTables::class,
-            ]
-            .....</p>
+            ]  <br>
+            </p>
