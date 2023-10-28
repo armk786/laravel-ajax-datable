@@ -12,17 +12,10 @@
  <!--  <form action="https://google.com" target="_blank">
     <input type="submit" value="Go to Google"  style="float:right;" />
 </form> -->
-<?php
-$url='localhost';
-$username='root';
-$password='';
-$conn=mysqli_connect($url,$username,$password,"ajax_datatable");
-if(!$conn){
- die('Could not Connect My Sql:' .mysql_error());
-}
+
 $result = mysqli_query($conn,"SELECT * FROM users");
 
-?>
+
 
 <div class="container">
     <table id="example" class="display" style="width:100%">

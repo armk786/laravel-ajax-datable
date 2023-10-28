@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Laravel 5.8 Ajax CRUD tutorial using Datatable - ItSolutionStuff.com</title>
+    <title>Lara-Ajax CRUD</title>
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" />
     <link href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet">
@@ -15,8 +15,12 @@
 <body>
     
 <div class="container">
-    <h1>Laravel Ajax CRUD</h1>
-    <a class="btn btn-success" href="javascript:void(0)" id="createNewProduct"> Create New Product</a>
+    <h5>Laravel Ajax CRUD</h5>
+   
+    <a class="btn btn-success btn-sm" href="{{ route('home') }}">Return-back</a>
+    <a class="btn btn-success btn-sm" href="javascript:void(0)" id="createNewProduct">Create</a>
+    <hr>
+    
     <table class="table table-bordered data-table">
         <thead>
             <tr>
@@ -78,6 +82,7 @@
     var table = $('.data-table').DataTable({
         processing: true,
         serverSide: true,
+       
         ajax: "{{ route('products.index') }}",
         columns: [
             {data: 'DT_RowIndex', name: 'DT_RowIndex'},
